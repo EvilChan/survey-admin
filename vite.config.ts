@@ -1,6 +1,7 @@
 import babel from "@rolldown/plugin-babel";
 import react, { reactCompilerPreset } from "@vitejs/plugin-react";
 import { defineConfig, lazyPlugins } from "vite-plus";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -53,5 +54,5 @@ export default defineConfig({
       },
     ],
   },
-  plugins: lazyPlugins(() => [react(), babel({ presets: [reactCompilerPreset()] })]),
+  plugins: lazyPlugins(() => [react(), babel({ presets: [reactCompilerPreset()] }), tailwindcss()]),
 });

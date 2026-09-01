@@ -10,10 +10,13 @@
     "preview": "vp preview"
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^2.1.2",
     "@ant-design/icons": "^6.3.4",
+    "@tailwindcss/vite": "^4.3.3",
     "antd": "^6.6.2",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
@@ -24,6 +27,7 @@
     "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react": "^6.1.0",
     "babel-plugin-react-compiler": "^1.0.0",
+    "sass-embedded": "^1.103.1",
     "typescript": "~6.0.2",
     "vite": "npm:@voidzero-dev/vite-plus-core@0.3.0",
     "vite-plus": "0.3.0"

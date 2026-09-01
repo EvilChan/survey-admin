@@ -1,11 +1,14 @@
+import { StyleProvider } from "@ant-design/cssinjs";
 import { ConfigProvider } from "antd";
 import zhCN from "antd/es/locale/zh_CN";
 
 function App() {
   return (
-    <ConfigProvider locale={zhCN}>
-      <div>Hello World</div>
-    </ConfigProvider>
+    <StyleProvider layer>
+      <ConfigProvider locale={zhCN}>
+        <div>Hello World</div>
+      </ConfigProvider>
+    </StyleProvider>
   );
 }
 
