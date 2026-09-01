@@ -13,9 +13,14 @@ export default defineConfig({
           groupName: "react",
           elementNamePattern: ["react", "react-**"],
         },
+        {
+          groupName: "antd",
+          elementNamePattern: ["antd", "@ant-design/**"],
+        },
       ],
       groups: [
         "react",
+        "antd",
         "builtin",
         "external",
         ["internal", "subpath"],
